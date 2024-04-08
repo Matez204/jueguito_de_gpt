@@ -13,14 +13,14 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 # Definir la velocidad de movimiento del círculo
-SPEED = 150
+SPEED = 5
 
 # Crear la ventana
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Mover círculo")
 
 # Definir el círculo
-circle_radius = 20
+circle_radius = 8
 circle_x = SCREEN_WIDTH // 2
 circle_y = SCREEN_HEIGHT // 2
 
@@ -64,7 +64,7 @@ while running:
     pygame.display.flip()
 
     # Controlar la velocidad de la animación
-    pygame.time.Clock().tick(30)
+    pygame.time.Clock().tick(1000)
 
 # Salir de pygame
 pygame.quit()
